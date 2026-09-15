@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Roster Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+    <header>
+        <p class="eyebrow">FANTASY ESPORTS</p>
+        <h1>World Roster Challenge</h1>
+        <p>Construye un equipo histórico y busca la copa en el formato clásico de grupos.</p>
+    </header>
+
+    <section id="roster" class="roster"></section>
+
+    <section class="panel controls">
+        <div>
+            <strong id="roundText">Preparando partida...</strong>
+            <p id="statusText">Selecciona una opción por posición.</p>
+        </div>
+        <button id="spinButton">Obtener candidatos</button>
+    </section>
+
+    <section id="options" class="options"></section>
+
+    <section id="simulation" class="panel hidden">
+        <label for="seedInput">Semilla opcional</label>
+        <input id="seedInput" type="number" placeholder="Ej. 12345">
+        <button id="simulateButton">Simular Worlds</button>
+        <div id="result"></div>
+    </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
